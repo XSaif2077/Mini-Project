@@ -165,7 +165,7 @@ class Inventory {
     }
 
     public void removeProduct(String productId) {
-        products.removeIf(p -> p.productId.equals(productId));
+         products.removeIf(p -> p.productId.equals(productId));
     }
 
     public Product searchProduct(String productId) {
@@ -182,6 +182,16 @@ public class MiniP {
 
     public static void main(String[] args) {
 
+        Product shirt = new Product("P1", "Silk Shirt", "High-quality silk shirt", "L", "Blue", 600, 10);
+        Product trousers = new Product("P2", "Cotton Trousers", "Comfortable cotton trousers", "M", "Black", 400, 20);
+
+        Order order = new Order("O1001", new Date());
+        order.addProduct(shirt);
+        order.addProduct(trousers);
+
+        Customer customer = new Customer("C1001", "Jane Smith", "jane@example.com", "9876543210");
+
+        // Customer places an order with a discount
+        customer.makeOrder(order, 10);  // 10% discount
     }
-    
 }
