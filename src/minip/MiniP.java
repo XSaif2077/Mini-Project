@@ -143,6 +143,20 @@ class Customer {
         return name;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void makeOrder(Order order, double discountRate) {
+        order.displayOrderSummary(this, discountRate);
+        System.out.println("Order placed successfully!");
+    }
+}
+
 
 public class MiniP {
 
