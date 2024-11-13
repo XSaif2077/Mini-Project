@@ -57,6 +57,11 @@ class Material {
         this.costPerMeter = costPerMeter;
     }
 
+    public double calculateTotalCost(double meters) {
+        return costPerMeter * meters;
+    }
+}
+
 public class MiniP {
 
     public static void main(String[] args) {
