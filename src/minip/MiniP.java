@@ -74,6 +74,26 @@ class Vendor {
         this.contactDetails = contactDetails;
     }
 
+    public void addMaterial(Material material) {
+        availableMaterials.add(material);
+    }
+
+    public List<Material> listMaterials() {
+        return availableMaterials;
+    }
+}
+
+class Order {
+    private String orderNumber;
+    private Date orderDate;
+    private List<Product> items = new ArrayList<>();
+    private double totalAmount;
+
+    public Order(String orderNumber, Date orderDate) {
+        this.orderNumber = orderNumber;
+        this.orderDate = orderDate;
+    }
+
 public class MiniP {
 
     public static void main(String[] args) {
