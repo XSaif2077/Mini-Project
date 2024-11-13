@@ -94,6 +94,18 @@ class Order {
         this.orderDate = orderDate;
     }
 
+     public void addProduct(Product product) {
+        items.add(product);
+    }
+
+    public double calculateTotal(double discountRate) {
+        totalAmount = 0;
+        for (Product item : items) {
+            totalAmount += item.getDiscountedPrice(discountRate);
+        }
+        return totalAmount;
+    }
+
 public class MiniP {
 
     public static void main(String[] args) {
