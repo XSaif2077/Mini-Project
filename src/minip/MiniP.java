@@ -23,6 +23,18 @@ class Product {
         this.stock = stock;
     }
 
+public void setStock(int stock) {
+        this.stock = stock;
+    }
+
+    public double getDiscountedPrice(double discountRate) {
+        return price * (1 - discountRate / 100);
+    }
+
+    public String getProductName() {
+        return productName;
+    }
+
 public class MiniP {
 
     public static void main(String[] args) {
