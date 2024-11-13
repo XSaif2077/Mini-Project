@@ -44,6 +44,19 @@ public void setStock(int stock) {
     }
 }
 
+class Material {
+    private String materialId;
+    private String fabricType;
+    private String color;
+    private double costPerMeter;
+
+    public Material(String materialId, String fabricType, String color, double costPerMeter) {
+        this.materialId = materialId;
+        this.fabricType = fabricType;
+        this.color = color;
+        this.costPerMeter = costPerMeter;
+    }
+
 public class MiniP {
 
     public static void main(String[] args) {
