@@ -35,6 +35,15 @@ public void setStock(int stock) {
         return productName;
     }
 
+  public double getPrice() {
+        return price;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+}
+
 public class MiniP {
 
     public static void main(String[] args) {
