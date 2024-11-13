@@ -191,7 +191,6 @@ public class MiniP {
 
         Customer customer = new Customer("C1001", "Jane Smith", "jane@example.com", "9876543210");
 
-        // Customer places an order with a discount
-        customer.makeOrder(order, 10);  // 10% discount
+        customer.makeOrder(order, 10);
     }
 }
