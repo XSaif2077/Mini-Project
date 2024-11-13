@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Date;
 
 class Product {
-    private String productId;
+    String productId;
     private String productName;
     private String description;
     private String size;
