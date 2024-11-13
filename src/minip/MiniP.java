@@ -62,6 +62,18 @@ class Material {
     }
 }
 
+class Vendor {
+    private String vendorId;
+    private String vendorName;
+    private String contactDetails;
+    private List<Material> availableMaterials = new ArrayList<>();
+
+    public Vendor(String vendorId, String vendorName, String contactDetails) {
+        this.vendorId = vendorId;
+        this.vendorName = vendorName;
+        this.contactDetails = contactDetails;
+    }
+
 public class MiniP {
 
     public static void main(String[] args) {
