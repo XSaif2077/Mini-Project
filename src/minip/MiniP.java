@@ -106,6 +106,26 @@ class Order {
         return totalAmount;
     }
 
+     public void displayOrderSummary(Customer customer, double discountRate) {
+        System.out.println("----- Invoice -----");
+        System.out.println("Customer Name: " + customer.getName());
+        System.out.println("Email: " + customer.getEmail());
+        System.out.println("Phone: " + customer.getPhone());
+        System.out.println("Order ID: " + orderNumber);
+        System.out.println("Order Date: " + orderDate);
+        
+        for (Product item : items) {
+            System.out.println("Item: " + item.getProductName() + " | Original Price: " + item.getPrice() +
+                               " | Discounted Price: " + item.getDiscountedPrice(discountRate) +
+                               " | Description: " + item.getDescription());
+        }
+
+        System.out.println("Discount Applied: " + discountRate + "%");
+        System.out.println("Total Amount: " + calculateTotal(discountRate));
+        System.out.println("-------------------");
+    }
+}
+
 public class MiniP {
 
     public static void main(String[] args) {
