@@ -157,6 +157,26 @@ class Customer {
     }
 }
 
+class Inventory {
+    private List<Product> products = new ArrayList<>();
+
+    public void addProduct(Product product) {
+        products.add(product);
+    }
+
+    public void removeProduct(String productId) {
+        products.removeIf(p -> p.productId.equals(productId));
+    }
+
+    public Product searchProduct(String productId) {
+        for (Product p : products) {
+            if (p.productId.equals(productId)) {
+                return p;
+            }
+        }
+        return null;
+    }
+}
 
 public class MiniP {
 
