@@ -182,14 +182,14 @@ public class MiniP {
 
     public static void main(String[] args) {
 
-        Product shirt = new Product("P1", "Silk Shirt", "High-quality silk shirt", "L", "Blue", 600, 10);
-        Product trousers = new Product("P2", "Cotton Trousers", "Comfortable cotton trousers", "M", "Black", 400, 20);
+        Product shirt = new Product("P1", "Formal Shirt", "High-quality Formal Shirt", "XXXL", "Black", 2000, 10);
+        Product trousers = new Product("P2", "Regular Wear Trouser", "Comfortable regular wear trousers", "XXXL", "Gray", 1500, 20);
 
         Order order = new Order("O1001", new Date());
         order.addProduct(shirt);
         order.addProduct(trousers);
 
-        Customer customer = new Customer("C1001", "Jane Smith", "jane@example.com", "9876543210");
+        Customer customer = new Customer("C1001", "Saif", "saif.ahmed122519@gmail.com", "01837650552");
 
         customer.makeOrder(order, 10);
     }
